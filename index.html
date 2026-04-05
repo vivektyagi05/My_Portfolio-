@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Vivek Tyagi</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Background Effects -->
+    <div class="bg-animation">
+        <div class="gradient-orb orb-1"></div>
+        <div class="gradient-orb orb-2"></div>
+        <div class="gradient-orb orb-3"></div>
+    </div>
+
+    <!-- Header / Navigation -->
+    <header class="header" id="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <div class="logo">
+                        <a href="#home" class="logo-link">
+                            <span class="logo-icon">
+                                <img src="assets/images/logo.png" alt="Vivek Logo" class="logo-img">
+                            </span>
+                            <span class="logo-text">Portfolio</span>
+                        </a>
+                    </div>
+                    <ul class="nav-menu" id="nav-menu">
+                        <li><a href="#home" class="nav-link active">Home</a></li>
+                        <li><a href="#about" class="nav-link">About</a></li>
+                        <li><a href="#skills" class="nav-link">Skills</a></li>
+                        <li><a href="#projects" class="nav-link">Projects</a></li>
+                        <li><a href="#education" class="nav-link">Education</a></li>
+                        <li><a href="#experience" class="nav-link">Experience</a></li>
+                        <li><a href="#certifications" class="nav-link">Certifications</a></li>
+                        <li><a href="#contact" class="nav-link">Contact</a></li>
+                    </ul>
+                    <div class="nav-actions">
+                        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                            <i class="fas fa-moon" id="themeIcon"></i>
+                        </button>
+                        <div class="hamburger" id="hamburger">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero / Home Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="badge-text">Welcome to my Portfolio</span>
+                    <span class="badge-pulse"></span>
+                </div>
+                <h1 class="hero-title">
+                    <span class="greeting" id="autoGreeting">Hi, I'm</span>
+                    <span class="name typing-text" data-text="Your Name">Vivek Tyagi</span>
+                </h1>
+                <h2 class="hero-subtitle">
+                    <span class="role-text" id="roleText">Software Developer & Backend Engineer</span>
+                </h2>
+                <p class="hero-description">
+                    I create beautiful and functional web experiences that make a difference.
+                    Turning ideas into reality with code, creativity, and passion.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary btn-glow">
+                        <span>View Projects</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#contact" class="btn btn-secondary btn-glass">
+                        <span>Hire Me</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="50">0</div>
+                        <div class="stat-label">Projects</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="100">0</div>
+                        <div class="stat-label">Happy Clients</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="6">0</div>
+                        <div class="stat-label">Months Experience</div>
+                    </div>
+                    <div class="hero-light"></div>
+                </div>
+            </div>
+        </div>
+             <!-- Hero Side Images -->
+        <div class="scroll-indicator">
+            <a href="#about" class="scroll-btn">
+                <span>Scroll</span>
+                <i class="fas fa-chevron-down"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="assets/images/profile-about.jpeg" alt="Vivek Tyagi">
+                </div>
+                <div class="about-text">
+                    <p>
+                        I'm a passionate full-stack developer with expertise in creating modern web applications.
+                        With a strong foundation in both frontend and backend technologies, I bring ideas to life
+                        through clean code and innovative solutions.
+                    </p>
+                    <p>
+                        My journey in web development started during my college years, and I've been continuously
+                        learning and growing ever since. I enjoy tackling complex problems and turning them into
+                        simple, elegant solutions.
+                    </p>
+                    <div class="about-details">
+                        <div class="detail-item">
+                            <span class="detail-label">Location:</span>
+                            <span class="detail-value">Dholpur Rajasthan, India</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Email:</span>
+                            <span class="detail-value">vivektyagi1022@gmail.com</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Available:</span>
+                            <span class="detail-value">+91 8619270196 </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <div class="container">
+            <h2 class="section-title">Skills</h2>
+            <p class="section-subtitle">Technologies I work with</p>
+            
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3 class="category-title"><i class="fas fa-code"></i> Frontend</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">HTML</span>
+                                <span class="skill-percent">95%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">CSS</span>
+                                <span class="skill-percent">90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">JavaScript</span>
+                                <span class="skill-percent">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-credibility">
+                            <span>Real-world usage</span>
+                            <div class="credibility-bar">
+                                <div class="credibility-fill" style="width:70%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3 class="category-title"><i class="fas fa-server"></i> Backend</h3>
+                    <div class="skill-items">
+
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Java</span>
+                                <span class="skill-percent">80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Spring Boot</span>
+                                <span class="skill-percent">70%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 70%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Python</span>
+                                <span class="skill-percent">75%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 75%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Django</span>
+                                <span class="skill-percent">75%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 75%"></div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class="skill-category">
+                    <h3 class="category-title"><i class="fas fa-tools"></i> Tools & Others</h3>
+                    <div class="skill-icons">
+
+                        <div class="skill-icon-item">
+                            <i class="fab fa-git-alt"></i>
+                            <span>Git</span>
+                        </div>
+
+                        <div class="skill-icon-item">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub</span>
+                        </div>
+
+                        <div class="skill-icon-item">
+                            <i class="fab fa-linux"></i>
+                            <span>Kali Linux</span>
+                        </div>
+
+                        <div class="skill-icon-item">
+                            <i class="fas fa-bug"></i>
+                            <span>Burp Suite</span>
+                        </div>
+
+                        <div class="skill-icon-item">
+                            <i class="fas fa-square-root-alt"></i>
+                            <span>NumPy</span>
+                        </div>
+
+                        <div class="skill-icon-item">
+                            <i class="fas fa-database"></i>
+                            <span>MySQL</span>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <p class="section-subtitle">Some of my recent work</p>
+            
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="frontend">Frontend</button>
+                <button class="filter-btn" data-filter="backend">Backend</button>
+                <button class="filter-btn" data-filter="fullstack">Full Stack</button>
+            </div>
+            
+            <div class="projects-grid">
+                <div class="project-card" data-category="fullstack">
+                    <div class="project-image">
+                        <div class="image-placeholder project-img">
+                            <i class="fas fa-project-diagram"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="#" class="project-link" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="#" class="project-link" target="_blank"><i class="fab fa-github"></i></a>
+                        </div>
+                        <div class="project-badge">Featured</div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">E-Commerce Platform</h3>
+                        <p class="project-description">
+                            A full-featured e-commerce platform with user authentication, product management,
+                            shopping cart, and payment integration.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">MongoDB</span>
+                            <span class="tech-tag">Stripe</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="fullstack">
+                    <div class="project-image">
+                        <div class="image-placeholder project-img">
+                            <i class="fas fa-project-diagram"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="#" class="project-link" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="#" class="project-link" target="_blank"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Task Management App</h3>
+                        <p class="project-description">
+                            A collaborative task management application with real-time updates, drag-and-drop
+                            functionality, and team collaboration features.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Vue.js</span>
+                            <span class="tech-tag">Django</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                            <span class="tech-tag">WebSocket</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="frontend">
+                    <div class="project-image">
+                        <div class="image-placeholder project-img">
+                            <i class="fas fa-project-diagram"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="#" class="project-link" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="#" class="project-link" target="_blank"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Weather Dashboard</h3>
+                        <p class="project-description">
+                            An interactive weather dashboard that displays current conditions and forecasts
+                            for multiple locations with beautiful visualizations.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">API</span>
+                            <span class="tech-tag">Chart.js</span>
+                            <span class="tech-tag">CSS3</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="frontend">
+                    <div class="project-image">
+                        <div class="image-placeholder project-img">
+                            <i class="fas fa-project-diagram"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="#" class="project-link" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="#" class="project-link" target="_blank"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Portfolio Website</h3>
+                        <p class="project-description">
+                            A responsive portfolio website showcasing projects, skills, and professional
+                            experience with smooth animations and modern design.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Responsive</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="education" id="education">
+        <div class="container">
+            <h2 class="section-title">Education</h2>
+            <p class="section-subtitle">Academic background and learning journey</p>
+            
+            <div class="timeline">
+
+                <!-- B.Tech -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-year">2024 – Present</span>
+
+                        <h3 class="timeline-title">B.Tech in Computer Science</h3>
+                        <p class="timeline-institution">
+                            Currently Pursuing
+                        </p>
+
+                        <p class="timeline-description">
+                            Pursuing Bachelor of Technology in Computer Science with a focus on
+                            programming, web development, cybersecurity basics, and problem-solving.
+                            Actively working on projects and practical learning alongside academics.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- 12th -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-year">2023 – 2024</span>
+
+                        <h3 class="timeline-title">Senior Secondary (12th)</h3>
+                        <p class="timeline-institution">
+                            Government School, Basai Nawab, Dholpur (Hindi Medium)
+                        </p>
+
+                        <p class="timeline-description">
+                            Completed higher secondary education with a focus on core academic subjects.
+                            Developed discipline, consistency, and interest in technology and computers.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- 10th -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-year">2021 – 2022</span>
+
+                        <h3 class="timeline-title">Secondary School (10th)</h3>
+                        <p class="timeline-institution">
+                            Government School, Basai Nawab, Dholpur (Hindi Medium)
+                        </p>
+
+                        <p class="timeline-description">
+                            Completed secondary education from a Hindi medium government school.
+                            Built strong foundational skills and developed self-learning habits.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Experience Section -->
+    <section class="experience" id="experience">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+            <p class="section-subtitle">Learning & practical development journey</p>
+            
+            <div class="timeline">
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-year">Feb 2026</span>
+
+                        <h3 class="timeline-title">Java Programming Intern</h3>
+                        <p class="timeline-institution">
+                            CodeAlpha (Remote Internship)
+                        </p>
+
+                        <p class="timeline-description">
+                            Selected as a Java Programming Intern at CodeAlpha for a one-month
+                            internship program focused on strengthening core Java concepts
+                            through hands-on learning and practical implementation.
+                        </p>
+
+                        <ul class="timeline-list">
+                            <li>Worked with core Java concepts such as OOPs, classes, objects, and methods</li>
+                            <li>Practiced problem-solving using Java logic and control structures</li>
+                            <li>Developed small Java-based programs to apply theoretical knowledge</li>
+                            <li>Improved understanding of clean code practices and debugging</li>
+                            <li>Gained practical exposure to real-world programming workflow</li>
+                        </ul>
+                    </div>
+                </div>
+
+
+                <!-- Current Experience -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-year">2025</span>
+
+                        <h3 class="timeline-title">B.Tech (Computer Science)</h3>
+                        <p class="timeline-institution">
+                            GLA University, Mathura
+                        </p>
+
+                        <p class="timeline-description">
+                            Currently pursuing B.Tech in Computer Science with a strong focus on
+                            programming fundamentals, web development, and problem-solving skills.
+                            Actively building projects to apply theoretical concepts into real-world applications.
+                        </p>
+
+                        <ul class="timeline-list">
+                            <li>Learned core programming concepts in <strong>Java</strong> and <strong>Python</strong></li>
+                            <li>Built responsive websites using <strong>HTML, CSS, and JavaScript</strong></li>
+                            <li>Worked with <strong>Django</strong> for backend development and authentication</li>
+                            <li>Practiced <strong>Data Structures & Algorithms</strong> for logic building</li>
+                            <li>Developed mini projects like portfolio website, forms, and CRUD applications</li>
+                            <li>Used <strong>Git & GitHub</strong> for version control and project management</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Practical Learning -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-year">2024 – 2025</span>
+
+                        <h3 class="timeline-title">Self-Taught Web Developer</h3>
+                        <p class="timeline-institution">
+                            Project-Based Learning
+                        </p>
+
+                        <p class="timeline-description">
+                            Gained hands-on experience by building real projects and continuously
+                            improving frontend and backend development skills through practice and learning.
+                        </p>
+
+                        <ul class="timeline-list">
+                            <li>Designed modern UI using <strong>HTML, CSS, animations, and gradients</strong></li>
+                            <li>Implemented dynamic behavior using <strong>JavaScript</strong></li>
+                            <li>Created backend logic with <strong>Django</strong> and database integration</li>
+                            <li>Focused on clean UI, responsiveness, and performance optimization</li>
+                            <li>Improved debugging, logical thinking, and code structuring skills</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Cyber Security Experience Section -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-year">2025 - 2026</span>
+
+                        <h3 class="timeline-title">Cyber Security Enthusiast</h3>
+                        <p class="timeline-institution">
+                            Self-Learning & Online Courses
+                        </p>
+
+                        <p class="timeline-description">
+                            Explored the fundamentals of cyber security, ethical hacking,
+                            and network security through online resources and practical exercises.
+                        </p>
+
+                        <ul class="timeline-list">
+                            <li>Learned basics of <strong>network security, encryption, and vulnerabilities</strong></li>
+                            <li>Practiced ethical hacking techniques in controlled environments</li>
+                            <li>Studied common attack vectors and defense mechanisms</li>
+                            <li>Understood importance of secure coding practices</li>
+                            <li>Applied security principles in web development projects</li>
+                        </ul>
+                    </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Certifications Section -->
+    <section class="certifications" id="certifications">
+        <div class="container">
+            <h2 class="section-title">Certifications & Achievements</h2>
+            <p class="section-subtitle">Continuous learning and growth</p>
+            
+            <div class="certifications-grid">
+
+
+                <div class="cert-card">
+                    <div class="cert-icon">
+                        <i class="fab fa-java"></i>
+                    </div>
+
+                    <h3 class="cert-title">Java Programming Internship</h3>
+                    <p class="cert-issuer">CodeAlpha</p>
+                    <span class="cert-date">Feb 2026</span>
+
+                    <a href="assets/Internship/CodeAlpha_Java_Internship.jpg"
+                    target="_blank"
+                    class="cert-btn">
+                    View Offer Letter
+                    </a>
+                </div>
+
+
+                <div class="cert-card">
+                    <div class="cert-icon">
+                        <i class="fab fa-google"></i>
+                    </div>
+                    <h3 class="cert-title">Google Cloud Professional</h3>
+                    <p class="cert-issuer">Google Cloud Platform</p>
+                    <span class="cert-date">2025</span>
+                    <a href="assets/certificates/google-cloud.png"
+                    target="_blank"
+                    class="cert-btn">
+                    View Certificate
+                    </a>
+                </div>
+
+                <div class="cert-card">
+                    <div class="cert-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+
+                    <h3 class="cert-title">CTF Achievement – IIT Jodhpur</h3>
+                    <p class="cert-issuer">National Level Cyber Security Event</p>
+                    <span class="cert-date">2025</span>
+
+                    <a href="assets/certificates/iit-jodhpur-ctf.jpg"
+                    target="_blank"
+                    class="cert-btn">
+                    View Certificate
+                    </a>
+                </div>
+
+                <div class="cert-card">
+                    <div class="cert-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3 class="cert-title">Java Basic</h3>
+                    <p class="cert-issuer">Infosys</p>
+                    <span class="cert-date">2025</span>
+                    <a href="assets/certificates/js-algorithms.png"
+                    target="_blank"
+                    class="cert-btn">
+                    View Certificate
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Download Section -->
+    <section class="resume-section">
+        <div class="container">
+            <div class="resume-content">
+                <h2>Want to know more?</h2>
+                <p>Download my resume to learn more about my experience and qualifications.</p>
+                <a href="assets/resume/Vivek_Tyagi_Resume.pdf"
+                class="btn btn-primary"
+                download
+                target="_blank">
+                <i class="fas fa-download"></i> Download Resume
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="section-subtitle">I'd love to hear from you</p>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <p>vivektyagi1022@gmail.com</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Phone</h3>
+                            <p>+91 8619270196</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Location</h3>
+                            <p>Jaipur, India</p>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="https://github.com/vivektyagi05" target="_blank" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/vivek-tyagi007/" target="_blank" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://x.com/VTyagi821" target="_blank" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="https://instagram.com/vivek.tyag1" target="_blank" class="social-link"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contact-form">
+                    <div class="form-group floating-label">
+                        <input type="text" id="name" name="name" placeholder=" " required>
+                        <label for="name">Your Name</label>
+                    </div>
+                    <div class="form-group floating-label">
+                        <input type="email" id="email" name="email" placeholder=" " required>
+                        <label for="email">Your Email</label>
+                    </div>
+                    <div class="form-group floating-label">
+                        <textarea id="message" name="message" rows="5" placeholder=" " required></textarea>
+                        <label for="message">Your Message</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-glow">
+                        <span>Send Message</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                    <div class="form-message" id="form-message"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; Vivek Tyagi. All rights reserved.</p>
+                <div class="footer-social">
+                    <a href="https://github.com/vivektyagi05" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/vivek-tyagi007/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://x.com/VTyagi821" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://instagram.com/vivek.tyag1" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- AI Chatbot -->
+    <div class="ai-chatbot">
+
+<button id="chatbotToggle" class="chatbot-toggle">
+<i class="fas fa-robot"></i>
+</button>
+
+<div id="chatbotWindow" class="chatbot-window">
+
+<div class="chatbot-header">
+<span>Vivek AI Assistant</span>
+<button id="chatbotClose">✕</button>
+</div>
+
+<div id="chatbotMessages" class="chatbot-messages">
+
+<div class="bot-message">
+Hello 👋  
+Ask anything about Vivek.
+</div>
+
+</div>
+
+<div class="chatbot-controls">
+
+<input id="chatbotInput" placeholder="Ask something..." />
+
+<button id="chatbotSend">
+<i class="fas fa-paper-plane"></i>
+</button>
+
+<button id="voiceBtn">
+🎤
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>

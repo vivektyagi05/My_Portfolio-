@@ -1,0 +1,29 @@
+{
+"name": "Vivek Tyagi",
+"email": "thelegendofvivek0001@gmail.com",
+"location": "Jaipur, India",
+"education": {
+"10th": "Govt School Basai Nawab, Dholpur",
+"12th": "Govt School Basai Nawab, Dholpur",
+"degree": "B.Tech Computer Science"
+},
+"skills": [
+"Java",
+"Spring Boot",
+"Django",
+"Cyber Security",
+"Kali Linux",
+"Burp Suite",
+"HTML",
+"CSS",
+"JavaScript"
+],
+"experience": [
+"Java Programming Intern at CodeAlpha (Feb 2026)"
+],
+"achievements": [
+"IIT Jodhpur CTF Rank 12"
+],
+"github": "https://github.com/vivektyagi05",
+"linkedin": "https://linkedin.com/in/vivektyagi"
+}
