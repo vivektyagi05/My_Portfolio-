@@ -1,0 +1,13 @@
+/assets/certificates
+/assets/images
+/assets/internship
+/assets/resume
+/knowledge/vivek.json
+
+/node_modules
+/server/server.js
+.env
+script.js
+style.css
+package-lock.json
+package.json
